@@ -1,0 +1,26 @@
+{
+  "name": "nightwatch-api-cucumber",
+  "version": "1.0.0",
+  "description": "Demonstration for using Nightwatch API from CucumberJS test runner",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cross-env browser=chrome npm test",
+    "test:firefox": "cross-env browser=firefox npm test",
+    "test": " cucumber-js ./tests/features  --tags @scenario_open --require ./tests/steps_def/*.js --require cucumber.conf.js --format node_modules/cucumber-pretty"
+  },
+  "repository": "git@github.com:mucsi96/nightwatch-api.git",
+  "author": "Igor Mucsicska <mucsi_96@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chromedriver": "2.46.0",
+    "cross-env": "^5.2.0",
+    "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.0",
+    "geckodriver": "^1.15.1",
+    "nightwatch": "^1.0.19",
+    "nightwatch-api": "latest"
+  }
+}
